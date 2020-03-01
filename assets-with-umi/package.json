@@ -26,9 +26,10 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.0",
     "react-sticky": "^6.0.3",
-    "umi": "^2.2.2"
+    "umi": "^3.0.0-beta.38"
   },
   "devDependencies": {
+    "@umijs/preset-react": "^1.2.2",
     "antd-mobile": "^2.2.6",
     "autod": "^3.0.1",
     "autod-egg": "^1.0.0",
@@ -39,8 +40,6 @@
     "eslint": "^5.8.0",
     "eslint-config-egg": "^7.1.0",
     "redbox-react": "^1.5.0",
-    "umi-plugin-ecma5-validator": "^0.1.0",
-    "umi-plugin-react": "^1.2.0",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {

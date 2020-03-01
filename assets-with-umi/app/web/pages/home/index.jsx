@@ -1,14 +1,14 @@
 import * as React from 'react';
-import router from 'umi/router';
+import { history } from 'umi';
 import { StickyContainer, Sticky } from 'react-sticky';
 import { SearchBar, Grid, ListView } from 'antd-mobile';
-import styles from './index.module.less';
+import styles from './index.less';
 
 export default class extends React.Component {
   constructor(props) {
     super(props);
     if (window.location.pathname.indexOf('/home') < 0) {
-      router.replace('/home');
+      history.replace('/home');
       return;
     }
   }
@@ -18,7 +18,7 @@ export default class extends React.Component {
     coords: {},
     rank_id: '',
     isLoading: false,
-  }
+  };
 
   componentWillMount() {
     if (navigator.geolocation) {

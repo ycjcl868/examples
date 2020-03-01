@@ -1,7 +1,7 @@
 import * as React from 'react';
-import router from 'umi/router';
+import { history } from 'umi';
 import { NavBar, Icon, Grid } from 'antd-mobile';
-import styles from './index.module.less';
+import styles from './index.less';
 
 export default class extends React.Component {
   renderItem = data => {
@@ -23,7 +23,7 @@ export default class extends React.Component {
     return (
       <div>
         <NavBar
-          onLeftClick={() => router.goBack()}
+          onLeftClick={() => history.goBack()}
           mode="dark"
           icon={<Icon type="left" />}
         >发现</NavBar>

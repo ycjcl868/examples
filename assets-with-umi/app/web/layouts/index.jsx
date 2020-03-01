@@ -1,9 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import withRouter from 'umi/withRouter';
-import router from 'umi/router';
+import { withRouter, history } from 'umi';
 import { Tabs } from 'antd-mobile';
-import styles from './index.module.less';
+import styles from './index.less';
 
 const svgs = [
   <svg
@@ -117,7 +116,7 @@ export default class Layout extends React.PureComponent {
   }
 
   gotoTab = url => {
-    router.push(url);
+    history.push(url);
   };
 
   render() {
